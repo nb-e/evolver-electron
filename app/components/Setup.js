@@ -228,6 +228,9 @@ export default class Setup extends Component<Props> {
           if (evolverComponent == "temp") {
             evolverMessage[vials[i]] = this.linearCalToRaw(value, this.state.tempCal.coefficients[i]).toFixed(0);
           }
+          elseif (evolverComponent == "light") {
+            evolverMessage[vials[i]] = Math.round(value.percent*40.95);
+          }
           else {
             evolverMessage[vials[i]] = value;
           }
