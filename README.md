@@ -1,7 +1,16 @@
-## Install
+## About
+This app allows control of eVOLVER functions from your computer. It might be helpful for pump calibration and other tests before starting an experiment.
 
+## Pre-Compiled Installation
 - **If you have installation or compilation issues with this project, please see [the debugging guide](https://github.com/chentsulin/electron-react-boilerplate/issues/400)**
+It is recommended to install via downloading an already compiled version of this program. To do this, go to https://github.com/FYNCH-BIO/evolver-electron/releases or click the releases button on the right side of the page. Download the correct installer for your OS and install.
 
+Connect your computer to your eVOLVER and open the installed 'eVOLVER' app. Click the '+' in the lower right and add your eVOLVER's IP (found in the upper right hand corner on your machine).
+
+## Instructions for Compiling
+If for some reason you need to compile the eVOLVER app yourself, follow these instructions.
+
+### Dependencies
 Install dependencies with yarn.
 
 ```bash
@@ -9,14 +18,14 @@ $ cd your_directory/evolver-electron
 $ yarn
 ```
 
-## Run
+### Run
 
 Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process:
 
 ```bash
 $ yarn dev
 ```
-## Github
+### Github
 
 Use the command line to commit to the repo, using the Github App will throw errors:
 
@@ -25,7 +34,7 @@ git add .
 git commit -a --no-verify -m "Put comment here"
 ```
 
-## Packaging
+### Packaging
 
 To package apps for the local platform (Does not work well when compiling in other platforms. e.g. compile in OSX for OSX):
 
